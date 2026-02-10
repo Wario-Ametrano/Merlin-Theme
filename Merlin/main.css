@@ -1,0 +1,1069 @@
+/*************************************
+ * Merlin             *
+ * Author: Mario Ametrano                    *
+* Dark Theme for Falkon Browser  *
+ *************************************/
+
+*[html-link-look="true"]
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/*menu bar menus*/
+QMenu {
+    background-color: #343434;
+    border: 1px solid #505050;
+    color: #ffffff;
+    font: normal 11px;
+}
+QMenu::item {
+    /*background-color: red; conflicts with above*/
+}
+QMenu::item:selected {
+    background-color: #308cc6;
+    color: #ffffff;
+}
+QMenu::separator {
+    background: #505050;
+    margin: 1px;
+    height: 1px;
+}
+/*menu pop ups like bookmarks organizer header - text in thick pink boxes*/
+QHeaderView::section {
+    background-color: #343434;
+    padding-left: 4px;
+    border: 1px solid #308cc6;
+    color: #ffffff;
+}
+QListView {
+    border: 1px solid #505050;     
+    background: #2d2d2d; /*downloads background*/
+    alternate-background-color: #343434; /*downloads and pref extensions alt color*/
+    color: #ffffff;
+    font: 11px;
+}
+QListView::item:selected:!active {
+    background: #343434;
+    border:1px solid #308cc6;
+    color: #ffffff;
+}
+QListView::item:selected:active {
+    background: #343434;
+    border:1px solid #308cc6;
+    color: #ffffff;
+}
+QListView::item:!selected {
+    background: #2d2d2d;
+    border:none;
+    color: #ededed;
+}
+QListView::item:!selected:hover{
+    background: #308cc6;
+    border:1px solid #308cc6;
+    color: #ffffff;
+}
+/*MainWindow*/
+#mainwindow
+{
+    background : #343434;
+}
+
+#statusbar-ip-label
+{
+    padding-right: 5px;
+}
+
+/*NavigationBar*/
+#navigationbar
+{
+    qproperty-layoutMargin: 0;
+    qproperty-layoutSpacing: 3;
+}
+
+#navigationbar QSplitter::handle
+{
+    background-color:transparent;
+}
+
+#navigationbar QSplitter
+{
+    width: 5px;
+}
+
+#navigation-button-back
+{
+    qproperty-multiIcon: url(images/navigation-back.png);
+}
+
+#navigation-button-next
+{
+    qproperty-multiIcon: url(images/navigation-forward.png);
+}
+
+#navigation-button-stop
+{
+    qproperty-multiIcon: url(images/navigation-stop.png);
+}
+
+#navigation-button-reload
+{
+    qproperty-multiIcon: url(images/navigation-reload.png);
+}
+
+#navigation-button-home
+{
+    qproperty-multiIcon: url(images/navigation-home.png);
+}
+
+#navigation-button-addtab
+{
+    qproperty-themeIcon: "list-add";
+}
+
+#navigation-button-tools
+{
+    qproperty-multiIcon: url(images/navigation-tools.png);
+}
+
+#navigation-button-exitfullscreen
+{
+    qproperty-themeIcon: "view-restore";
+    qproperty-fallbackIcon: url(images/exit-fullscreen.svg);
+}
+
+#navigation-button-supermenu
+{
+    qproperty-themeIcon: "application-menu";
+    qproperty-multiIcon: url(images/menu.png);
+}
+
+ToolButton[button-id="button-downloads"]
+{
+    qproperty-icon: url(images/navigation-downloads.png);
+}
+#locationbar-siteicon
+{
+   margin-top:2px;
+   margin-left:2px;
+   background:#308cc6;
+   border:1px solid #308cc6;
+   height:18px;
+   width:19px;
+}
+#navigation-toolbutton-badge
+{
+    background: #308cc6;
+    border: 1px solid #343434;
+    color: #ffffff;
+}
+
+ToolButton[button-id="button-downloads"]
+{
+    qproperty-themeIcon: "edit-download";
+    background: #343434;
+    color: #ffffff;
+}
+
+ToolButton[toolbar-look="true"]
+{
+    qproperty-iconSize: 23px 23px;
+    qproperty-fixedsize: 23px 23px;
+    border-image: url(images/toolbutton.png);
+}
+
+ToolButton[toolbar-look="true"]:hover
+{
+    border-image: url(images/toolbutton-h.png);
+}
+
+ToolButton[toolbar-look="true"]:pressed
+{
+    border-image: url(images/toolbutton-a.png);
+}
+
+/*TabWidget*/
+#tabbar-button-right
+{
+    qproperty-themeIcon: "arrow-right";
+    qproperty-fallbackIcon: url(images/tab-right-arrow.svg);
+    qproperty-fixedsize: 15px 25px;
+}
+
+#tabbar-button-left
+{
+    qproperty-themeIcon: "arrow-left";
+    qproperty-fallbackIcon: url(images/tab-left-arrow.png);
+    qproperty-fixedsize: 15px 25px;
+}
+
+#tabwidget-button-opentabs
+{
+    qproperty-themeIcon: "go-down";
+    qproperty-fixedsize: 22px 29px;
+}
+
+#tabwidget-button-closedtabs
+{
+    qproperty-themeIcon: "user-trash-full";
+    qproperty-fixedsize: 22px 29px;
+}
+
+#tabwidget-button-addtab[outside-tabbar="false"]:hover
+{
+    background: #308cc6;
+    border:none;
+}
+
+#tabwidget-button-addtab[outside-tabbar="true"]
+{
+    qproperty-themeIcon: "list-add";
+}
+
+TabBarTabMetrics
+{
+    qproperty-pinnedWidth: 32;
+}
+
+/*ADD TAB-BAR BUTTON*/
+#tabwidget-button-addtab[outside-tabbar="false"]
+{
+    margin-left:1px;
+    margin-bottom:2px;
+    background : #2d2d2d;
+    border:none;
+    qproperty-fixedsize: 29px 29px;
+    qproperty-themeIcon: "list-add";
+}
+/*DEFAULT TAB-BAR*/
+#tabbar
+{
+    min-height: 28px;
+    max-height: 28px;  
+    qproperty-baseColor: transparent;
+    border-bottom:1px solid #505050;  
+}
+
+#tab-icon
+{
+    padding-right: 3px;
+    padding-left: 3px;
+    min-width: 16px;
+    max-width: 16px;
+    background: transparent;
+}
+
+#combotabbar_tabs_close_button
+{
+    max-width: 11px;
+    max-height: 9px;
+    min-width: 11px;
+    min-height: 9px;
+    padding-right: 2px;
+}
+
+#tabbar::close-button
+{
+    image: url(images/tab-close.svg);
+}
+
+#tabbar::close-button:hover
+{
+    image: url(images/tab-close-h.svg);
+}
+
+#tabbar::close-button:pressed
+{
+    image: url(images/tab-close-a.svg);
+}
+
+#tabbar::tab:selected
+{	
+    background : #343434;
+    color:#ffffff;
+    border: 1px solid #505050;
+    border-top: 1px solid #308cc6;
+    border-bottom:1px solid #343434;
+    height:27px;
+}
+
+#tabbar::tab:!selected
+{
+    background : #2d2d2d;
+    color:#cecece;
+    border: 1px solid #505050;
+    border-top:1px solid #343434;
+    border-bottom:1px solid #505050;
+    height:27px;
+}
+
+#tabbar::tab:!selected:hover
+{    
+    background: #343434;
+    color:#ffffff;
+    border: 1px solid #505050;
+    border-top:1px solid #343434;
+    border-bottom:1px solid #505050;
+    height:27px;
+}
+
+#tabbar::tab:selected:!first
+{
+    margin-left: -1px;
+}
+
+#tabbar::tab:!selected:!first
+{
+    margin-left: -1px;
+}
+
+#tabbar::tab:!selected:!first:hover
+{
+    margin-left: -1px;
+}
+
+#tabbar::tab:selected:first
+{
+    margin-left: -1;
+}
+
+#tabbar::tab:!selected:first
+{
+    margin-left: -1;
+}
+
+#tabbar::tab:selected:only-one
+{
+    margin-left: -1;
+}
+
+#tabbar::tab:!selected:only-one
+{
+    margin-left: -1;
+}
+
+#tabbar::tab:!selected:hover:only-one
+{
+    margin-left: -1;
+}
+
+/*IconProvider*/
+IconProvider
+{
+    qproperty-bookmarkIcon: url(images/star-a.svg);
+}
+
+/*LocationBar*/
+#locationbar
+{
+    background: #2d2d2d;
+    color:#ffffff;
+    border: 1px solid #505050;
+    min-height: 21px; 
+    max-height: 21px;
+    padding-left:4px;
+    qproperty-leftMargin: 25;
+    margin-top:1px;
+}
+#locationbar::focus
+{
+    border-color: #308cc6;
+    color:#ffffff;
+}
+
+#locationbar-bookmarkicon
+{
+    qproperty-themeIcon: "rating-unrated";
+    qproperty-fallbackIcon: url(images/star.svg);
+    qproperty-fixedsize: 16px 16px;
+    background:transparent;
+}
+
+#locationbar-bookmarkicon[bookmarked="true"]
+{
+    qproperty-themeIcon: "rating";
+    qproperty-fallbackIcon: url(images/star-a.svg);
+    qproperty-fixedsize: 16px 16px;
+    background:transparent;
+}
+
+#locationbar-goicon
+{
+    qproperty-themeIcon: "go-jump-locationbar";
+    qproperty-fallbackIcon: url(images/goto.png);
+    qproperty-fixedsize: 16px 16px;
+    background:transparent;
+}
+
+#locationbar-down-icon
+{
+   qproperty-fallbackIcon: url(images/location-down.png);
+   qproperty-fixedsize: 20px 20px;
+   background:transparent;
+}
+
+#locationbar-autofillicon
+{
+    qproperty-fallbackIcon: url(images/user.svg);
+    qproperty-fixedsize: 16px 16px;
+    background:transparent;
+}
+
+/*BookmarksToolbar*/
+#bookmarksbar QToolButton
+{
+    border:1px solid transparent;
+    border-width: 0px;
+    height: 15px;
+}
+
+/*SideBar*/
+#sidebar
+{
+    background: #343434;
+}
+
+#sidebar-splitter::handle
+{
+    background-color:transparent;
+}
+
+/*WebSearchBar*/
+#websearchbar
+{
+    background: #2d2d2d;
+    color:#ffffff;
+    border: 1px solid #505050;
+    margin-top:1px;
+    min-height: 21px; 
+    max-height: 21px;
+}
+
+#websearchbar::focus
+{
+    border-color: #308cc6;
+}
+
+#websearchbar-searchbutton
+{
+    qproperty-fixedsize: 18px 16px;
+    qproperty-themeIcon: "edit-find";
+    background:transparent;
+}
+
+#websearchbar-searchprovider-combobox
+{    
+    margin-top:1px;
+    margin-left:2px;
+    border:1px solid transparent;
+    background:#308cc6;
+    height: 18px;
+    qproperty-fixedwidth: 26;
+}
+
+/*SearchToolbar*/
+SearchToolBar #lineEdit[notfound="true"]
+{
+    background:#343434;
+}
+
+/*AboutDialog*/
+AboutDialog #label
+{
+    background: #343434;
+}
+
+AboutDialog #textLabel
+{
+    background: #343434;
+}
+
+/*DesktopNotification*/
+DesktopNotification
+{
+    background: #343434;
+}
+
+DesktopNotification #frame
+{
+    border: 1px solid #308cc6;
+    padding: 10px;
+}
+
+DesktopNotification #heading
+{
+    color: #ffffff;
+}
+
+DesktopNotification #text
+{
+    color: #ffffff;
+}
+
+/*BrowsingLibrary*/
+BrowsingLibrary #tabs
+{
+   background:#343434;
+}
+
+BrowsingLibrary #frame
+{
+    background:#505050;
+}
+
+/*JavaScript Dialogs*/
+#jsFrame
+{
+    background: url(images/semi-transp.png);
+}
+
+QFrame[js-frame="true"]
+{
+    border: 1px solid  black;
+    border-bottom: 0px;
+    background-color: #343434;
+}
+
+QFrame[js-frame2="true"]
+{
+    border: 1px solid  black;
+    border-top: 0px;
+    background-color: #343434;
+}
+
+/*WebView*/
+WebView
+{
+    background: #343434;
+}
+
+/*Check Box*/
+QCheckBox {
+	spacing: 5px;
+	color: #ffffff;
+}
+QCheckBox::indicator {
+	width: 48px;
+	height: 24px;
+}
+QCheckBox::indicator:checked {
+	image: url(images/on.png);
+}
+QCheckBox::indicator:unchecked {
+	image: url(images/off.png);
+}
+/*Radio Button*/
+QRadioButton::indicator {
+	width: 24px;
+	height: 24px;
+}
+QRadioButton::indicator::unchecked {
+	image: url(images/radoff.png);
+}
+QRadioButton::indicator::checked {
+	image: url(images/radon.png);
+}
+/*DIALOG WINDOW*/
+QDialog QScrollArea,
+QDialog QScrollArea QWidget,
+QDialog QScrollArea QWidget QWidget,
+QDialog QStackedWidget,
+QDialog QStackedWidget QWidget
+{
+    background-color: #343434 !important;
+    color: #ffffff !important;
+}
+QDialog QGroupBox
+{
+    background-color: #343434 !important;
+    border: 1px solid #505050;
+    color: #ffffff;
+}
+QDialog QLabel,
+QDialog QCheckBox,
+QDialog QRadioButton
+{
+    background: transparent;
+    color: #ffffff;
+}
+#PreferencesDialog QTreeWidget
+{
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border-right: 1px solid #505050;
+    outline: none;
+}
+#PreferencesDialog QTreeWidget::item
+{
+    padding: 6px;
+    background: transparent;
+    color: #ededed;
+}
+/*UserAgentManager has this*/
+QTableView {
+    background: #2d2d2d;
+    color: #ededed;
+    border: 1px solid #505050;
+    alternate-background-color: #343434;
+}
+QTableView::item:selected {
+	background-color: #343434;
+	color: #ffffff;
+}
+BookmarksTreeView::item:selected {
+    background-color: #308cc6;
+	color: #ffffff;
+}
+BookmarksTreeView::branch:selected { 
+	background-color: #505050; 
+}
+/*Below three are so lines dont show up in branch area (like with cleanlooks qt style/theme)*/
+BookmarksTreeView::branch:has-siblings:!adjoins-item {					background: #33393B; }
+BookmarksTreeView::branch:has-siblings:adjoins-item { 					background: #33393B; }
+BookmarksTreeView::branch:!has-children:!has-siblings:adjoins-item { 	background: #33393B; }
+/*Below same as above but selected - could combine these with commas, but may want to add images at some point */
+BookmarksTreeView::branch:has-siblings:!adjoins-item:selected {					background: #05688C; }
+BookmarksTreeView::branch:has-siblings:adjoins-item:selected { 					background: #05688C; }
+BookmarksTreeView::branch:!has-children:!has-siblings:adjoins-item:selected { 	background: #05688C; }
+
+/* Arrows for bookmarks sidebar */
+BookmarksTreeView::branch:open:has-children:!has-siblings,
+BookmarksTreeView::branch:open:has-children:has-siblings {
+    image: url(images/arrow-down.png); }
+BookmarksTreeView::branch:has-children:!has-siblings:closed,
+BookmarksTreeView::branch:closed:has-children:has-siblings {
+    image: url(images/arrow-right.png); }
+
+/* Sidebar Titlebar */
+#DockTitleBarWidget {
+        background-color: #343434;
+	min-height: 26px;
+}
+/* "History" and "Bookmarks" text */
+#DockTitleBarWidget #label { 
+	color: #ffffff;
+	font: bold;
+}
+/*Close Button (MacToolButton)*/
+#DockTitleBarWidget #closeButton {
+    qproperty-icon: url(images/tab-close.svg);
+    max-width: 14px;
+    max-height: 14px;
+    margin-top: 2px;
+    qproperty-iconSize: 10px;
+}
+
+/* Near black text color in pref menus - selectable in theme info text*/
+QLabel {  
+	color: #ededed;
+	selection-background-color: #308cc6;
+        selection-color: ffffff;
+}
+/* Theme info text */
+#name, #author, #descirption {
+	color: #ffffff;
+}
+/* Pref then Spell Check area */
+#spellcheckDirectories, #scrollAreaWidgetContents_2, #spellcheckDirectoriesScrollArea {
+	background: #343434; 
+	border: 1px solid #308cc6;
+	color: #ffffff;
+}
+
+/* History Sidebar */
+HistoryTreeView {
+	background: #343434;
+	color: #ffffff;
+	alternate-background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #353839, stop: 1 #232729);
+	border: 1px solid #505050;
+}
+HistoryTreeView::branch {
+	background-color: #343434;
+}
+HistoryTreeView::branch:open {					image: url(images/arrow-down.png); 	}
+HistoryTreeView::branch:closed:has-children {	image: url(images/arrow-right.png); }
+
+HistoryTreeView::item:selected {
+	background-color: #343434;
+        border:1px solid #308cc6;
+        color: #ffffff;		
+}
+HistoryTreeView::branch:selected {
+	background-color: #343434;
+        border:1px solid #308cc6;
+        color: #ffffff;	
+}
+HistoryTreeView::item:hover {
+	color: #308cc6;	
+}
+
+/* random test "HistoryMenu" will take over the Menu Bar drop down for history */
+/*HistoryMenu { color: white; }*/
+
+/* Spinbox up and down arrows in pref menu bars */
+QSpinBox::up-button {	background-image: url(images/arrow-up.png);		height: 15px;	}
+QSpinBox::down-button {	background-image: url(images/arrow-down.png);	height: 15px;	}
+
+/*Vertical Scrollbars*/
+QScrollBar:vertical {
+    border: 1px solid #505050;
+    background: #2d2d2d;
+     padding:1px;
+    width: 14px;
+    margin: 14px 0 14px 0;
+}
+QScrollBar::handle:vertical {
+    border: 1px solid #505050;
+    background: #505050;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    border: 1px solid #308cc6;
+    background: #308cc6;
+    min-width: 20px;
+}
+QScrollBar::handle:vertical:pressed {
+    background: #343434;
+    border: 1px solid #308cc6;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical {
+    border: 1px solid #505050;
+    background: #505050;
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {
+   border: 1px solid #308cc6;
+    background: #308cc6;
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:pressed {
+    border: 1px solid #308cc6;
+    background: #343434;
+    height: 12px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+    border: 1px solid #505050;
+    background: #505050;
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {
+    border: 1px solid #308cc6;
+    background: #308cc6;
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:pressed {
+    border: 1px solid #308cc6;
+    background: #343434;
+    height: 12px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical {
+    image: url(images/scroll-arrow-up.png);
+    width: 8px;
+    height: 6px;
+}
+QScrollBar::down-arrow:vertical {
+    image: url(images/scroll-arrow-down.png);
+    width: 8px;
+    height: 6px;
+}
+
+/*Horizontal Scrollbars*/
+QScrollBar:horizontal {
+    border: 1px solid #505050;
+    background: #2d2d2d;
+    padding:1px;
+    height: 14px;
+    margin: 0px 14px 0 14px;
+}
+QScrollBar::handle:horizontal {
+    border: 1px solid #505050;
+    background: #505050;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover {
+    border: 1px solid #308cc6;
+    background: #308cc6;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:pressed {
+    border: 1px solid #308cc6;
+    background: #343434;
+    min-width: 20px;
+}
+QScrollBar::add-line:horizontal {
+    border: 1px solid #505050;
+    background: #505050;
+    width: 12px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+    border: 1px solid #505050;
+    background: #505050;
+    width: 12px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:hover {
+    border: 1px solid #308cc6;
+    background: #308cc6;
+    width: 12px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:hover {
+    border: 1px solid #308cc6;
+    background: #308cc6;
+    width: 12px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::add-line:horizontal:pressed {
+    border: 1px solid #308cc6;
+    background: #343434;
+    width: 12px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal:pressed {
+    border: 1px solid #308cc6;
+    background: #343434;
+    width: 12px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::left-arrow:horizontal{
+    image: url(images/arrow-left.png);
+    width: 8px;
+    height: 8px;
+}
+QScrollBar::right-arrow:horizontal {
+    image: url(images/arrow-right.png);
+    width: 8px;
+    height: 8px;
+}
+
+/*********first one of these is bookmark sidebar search**title in library************/
+QComboBox, QDateTimeEdit, QSpinBox, QLineEdit {
+    background: #343434;
+    border: 1px solid #505050;
+    padding: 2px;
+    color: #ffffff;
+    selection-background-color: #308cc6;
+    selection-color: #ffffff;
+}
+BookmarksWidget { /*bookmarks page from star in location bar dropdown*/
+	background: #343434;
+	border: 1px solid #505050;
+}
+QToolButton {
+	background: #343434;
+	color: #ededed;
+	border: 1px solid #505050;
+       
+}
+QPushButton {
+	background: #343434;
+	color: #ededed;
+	border: 1px solid #505050;
+        height:25px;
+        width:80px;
+ }
+
+QPushButton:hover, QToolButton:hover
+{
+    color: #ffffff;
+    background:#308cc6;
+    border: 1px solid #308cc6;
+    height:25px;
+}
+QPushButton:pressed, QToolButton:pressed
+{
+    color: #ffffff;
+    background:#343434;
+    border: 1px solid #308cc6;
+    height:25px;
+}
+
+QComboBox::drop-down, QDateTimeEdit::drop-down {
+    width: 24px;
+    image: url(images/arrow-down.png);
+    background: #33393B;
+    border: 1px solid #0AB6F5;
+}
+/******************pref and other menu areas*************************/
+Preferences QAbstractScrollArea { 
+	padding: 0; 
+	margin: 0;
+}
+QTreeWidget {	
+	/*seen in pref menu password area */
+    background-color: #343434;
+    border: 1px solid #505050;
+    color: #ffffff;
+}
+
+/*Preferences*/ 
+QWidget#caption, QWidget#version {
+	color: #ffffff;
+}
+Preferences #line, Preferences #line_2, #stackedWidget { 
+	background-color: #343434; 
+}
+
+QTabWidget::pane, QDialog { 
+	background-color: #343434; 
+	border: 1px solid #505050;
+}
+
+/*Preferences Tab Bars*/ 
+QTabBar::tab {
+    background-color: #2d2d2d;
+    height: 27px;    
+    color: #e2e2e2;
+    font: bold;
+    border-bottom:1px solid #343434;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+QTabBar::tab:hover {
+    background: #343434;
+    height: 27px;    
+    border-left: 1px solid #505050;
+    color: #ffffff;
+    font: regular;
+}
+QTabBar::tab:selected {
+    background: #343434;
+    height: 28px;  
+    border-left: 1px solid #505050;
+    border-right: 1px solid #505050;
+    border-top: 1px solid #308cc6;
+    color: #ffffff;
+    font: regular;
+}
+QTabBar::tab:!selected {
+    font: regular;
+    border:1px solid transparent;
+    margin-left:1px;
+}
+
+/*AboutDialog*/
+AboutDialog #label {
+    background: #343434;
+}
+AboutDialog #textLabel {
+    background: #343434;
+}
+
+SiteInfoWidget #frame {
+	border: 1px solid #505050;
+	background: #343434;
+	color: #ffffff;
+}
+/*siteInfo Media Preview area*/
+#mediaPreview {
+	border: 1px solid #505050;
+	background: #343434;
+}
+
+/*Cookie Manager*/
+CookieManager #frame {
+	border: 1px solid #505050;
+	background: #343434;
+}
+
+/*Library - BrowsingLibrary ---bookmarks manager-organizer*/
+BrowsingLibrary #tabs {
+   background: #343434;
+}
+BrowsingLibrary #frame, BrowsingLibrary #frame_2 {
+	background: #343434; 
+}
+BrowsingLibrary #searchLine {
+    background: #343434;
+    border: 1px solid #505050 ;
+}
+
+/*Export Menu and Description Area Bookmarks*/
+#editBox, #groupBox {
+	background: #343434;
+	border: 1px solid #505050;
+	color: #ededed;
+}
+/*Bookmarks Export Menu Label*/
+BookmarksExportDialog #label {
+	color: #ffffff;
+}
+/*Description box Bookmarks Library*/
+QPlainTextEdit { 	
+	border: 1px solid #308cc6;
+	color: #ffffff;
+	background: #343434;
+}
+
+QFrame[js-frame="true"] {
+    border: 1px solid  #505050;
+    background-color: #2d2d2d;
+
+}
+QFrame[js-frame2="true"] {
+    border: 1px solid  #505050;
+    background-color: #2d2d2d;
+}
+
+/*Download Manager  Downloads DownloadItem #label */
+DownloadManager  {
+	background: #343434;
+        color:#ffffff;
+}
+ClickableLabel { /*needs work - this is the X cancel for active download - keep an eye out for this messing up other stuff*/
+    background:#343434;
+    qproperty-iconSize: 10px;
+    max-width: 14px;
+    max-height: 14px;
+}
+/*Download Bar Progress Bar*/
+QProgressBar {
+    border: 1px solid #308cc6;
+    background: #308cc6;
+}
+QProgressBar::chunk {
+    background-color: #308cc6;
+    width: 10px;
+    margin: 2px;
+}
+
+/*Location drop down completer bottom bar- not sure on border?*/
+LocationCompleterView {
+	background-color: #343434;
+        border:1px solid #505050;
+        color:#ffffff;
+}
+
+/*WebView when loading a page this color may flash in the main window*/
+WebView {
+    background: #308cc6;
+}
+
+/*Tool tips, you know those annoying pop ups -Currently disabled by zero size*/
+QToolTip {
+	background: #343434;
+        border:1px solid #505050;
+	color: #ffffff;
+}
+
+
