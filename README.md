@@ -40,6 +40,4 @@ In Falkon Browser:
 2. Select the Merlin Theme in the Appearance Option and apply the theme
 3. Enjoy! ;)
 
-https://github.com/user-attachments/assets/1946400b-df53-4da6-8b60-8292cf65b2c9
-
-
+https://github.com/user-attachments/assets/e478c91f-e613-4908-bfcf-4b9f4722d761
