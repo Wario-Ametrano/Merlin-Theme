@@ -1,5 +1,5 @@
 # Merlin-Falkon Browser Theme 🐦‍⬛
-### Merlin is a dark theme for the web Falkon browser
+### Merlin is a dark theme for the Falkon web browser
 
 ![Dark](https://github.com/Wario-Ametrano/Merlin-Theme/blob/main/Merlin-screen.png "Merlin-Theme")
 
