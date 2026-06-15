@@ -1,12 +1,13 @@
-# Merlin-Theme
-Falkon browser theme
+# Merlin-Falkon Browser Theme 🐦‍⬛
+### Merlin is a dark theme for the web Falkon browser
 
 ![Dark](https://github.com/Wario-Ametrano/Merlin-Theme/blob/main/Merlin-screen.png "Merlin-Theme")
 
 
-#### Requirements:
+## Requirements:
 
 - **Falkon Browser**
+- **QT Libraries Installed**
 
 ## Installation:
 This theme can be installed in several ways.
